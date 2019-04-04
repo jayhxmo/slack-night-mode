@@ -1037,51 +1037,6 @@ textarea[readonly] {
   .tab_complete_ui .not_in_channel {
     color: #949494; }
 
-#team_menu {
-  background: #363636;
-  border-bottom: 2px solid #363636;
-  color: #e6e6e6; }
-  #team_menu.active, #team_menu:hover {
-    background: #363636 !important;
-    border-bottom-color: #363636 !important; }
-    #team_menu.active i, #team_menu:hover i {
-      color: #e6e6e6; }
-  #team_menu i {
-    color: #949494; }
-  #team_menu .presence .presence_icon {
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
-  #team_menu .team_name_caret,
-  #team_menu .notifications_menu_btn {
-    color: #e6e6e6 !important; }
-
-#team_menu_user {
-  color: #949494; }
-
-#team_menu_user_name,
-#team_menu_user_details {
-  color: #e6e6e6 !important;
-  opacity: 0.75; }
-
-.slack_menu_section::before {
-  border-top-color: #222; }
-
-.slack_menu_header_secondary {
-  color: #949494; }
-
-.slack_menu_download {
-  background-color: #363636; }
-  .slack_menu_download ts-icon {
-    color: #949494; }
-
-#menu_items_scroller::-webkit-scrollbar-track {
-  background: #222 !important; }
-
-#limit_meter:hover #limit_meter_message_body {
-  color: #e6e6e6; }
-
-#limit_meter_message_body {
-  color: #949494; }
-
 .channel_header {
   background: #222;
   box-shadow: inset 1px 0 0 0 #222; }
