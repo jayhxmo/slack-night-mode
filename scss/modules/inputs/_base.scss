@@ -23,12 +23,12 @@ input {
     }
   }
 
-  &[type=file]:focus {
+  &[type='file']:focus {
     outline: $base-font-color dotted thin;
   }
 
-  &[type=radio]:focus,
-  &[type=checkbox]:focus {
+  &[type='radio']:focus,
+  &[type='checkbox']:focus {
     outline: $base-font-color dotted thin;
   }
 }
@@ -109,7 +109,30 @@ textarea:focus {
   box-shadow: inset 0 1px 1px rgba($black, 0.075), 0 0 8px rgba($color-shade-lightest, 0.6);
 }
 
-@include placeholder;
+// @include placeholder;
+
+::-webkit-input-placeholder {
+  color: $base-font-color !important;
+  -webkit-filter: none;
+  filter: none;
+  opacity: 0.5;
+}
+
+::-moz-placeholder {
+  color: $base-font-color !important;
+  filter: none;
+  opacity: 0.5;
+}
+
+::placeholder {
+  color: $base-font-color !important;
+  filter: none;
+  opacity: 0.5;
+}
+
+[data-placeholder]:empty::before {
+  color: $base-font-color !important;
+}
 
 input,
 textarea {
@@ -295,7 +318,8 @@ textarea {
 
   > {
     .btn + .dropdown-toggle {
-      box-shadow: inset 1px 0 0 rgba($black, 0.125), inset 0 1px 0 rgba($black, 0.2), 0 1px 2px rgba($white, 0.05);
+      box-shadow: inset 1px 0 0 rgba($black, 0.125), inset 0 1px 0 rgba($black, 0.2),
+        0 1px 2px rgba($white, 0.05);
     }
   }
 }
